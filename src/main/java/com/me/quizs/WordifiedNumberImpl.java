@@ -18,7 +18,7 @@ public class WordifiedNumberImpl implements WordifiedNumber {
     final static String conjunction = "and";
     final static String hundred = "hundred";
     final static String decimalFormat = "###,###.###";
-    final static String separator = ".";
+    final static String separator = ",";
     final static String[] units = {"zero", "one", "two", "three", "four",
         "five", "six", "seven", "eight", "nine", "ten",
         "eleven", "twelve", "thirteen", "fourteen", "fifteen",
@@ -134,7 +134,7 @@ public class WordifiedNumberImpl implements WordifiedNumber {
                 position++;
             }
         }
-
+        System.out.println("RESULT: " + sb);
         return sb.toString().trim();
     }
 
