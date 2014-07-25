@@ -31,14 +31,7 @@ public class MissingInteger {
         int result = 0;
         for(int i=0;i<A.length;i++){
             int factor = A[i];
-            boolean check = false;
-            for(int j=0;j<A.length;j++){
-                int next = A[j];
-                if(factor+1 == next){
-                    check = true;
-                }
-            }
-            if(!check && factor+1 < getMaxValue(A)){
+            if(factor+1 <= getMaxValue(A) && !contains (A, factor+1)){
                 result = factor+1;
                 break;
             }
@@ -57,5 +50,13 @@ public class MissingInteger {
        }  
        return maxValue;  
   }  
+    
+    private static boolean contains(int[] arr, int targetValue) {
+	for(int s: arr){
+		if(s == targetValue)
+			return true;
+	}
+	return false;
+    }
 
 }
