@@ -5,6 +5,9 @@
  */
 package com.me.quizs;
 
+import java.util.Arrays;
+import java.util.List;
+
 /*
  Write a function:
  class Solution { public int solution(int[] A); }
@@ -28,6 +31,7 @@ public class MissingInteger {
     }
 
     public static int solution(int[] A) {
+                
         int result = 0;
         for(int i=0;i<A.length;i++){
             int factor = A[i];
