@@ -23,15 +23,18 @@ package com.me.quizs;
  */
 public class CountDiv {
     public static void main(String[] args) {
-        int[] start = {4, 2, 2, 5, 1, 5, 8};
-        System.out.println(solution(start));
+        //int[] start = {6, 11, 2};
+        System.out.println(solution(6, 11, 2));
     }
 
-    public static int solution(int[] A) {
-        int result = 0;
-        
-        
-        
-        return result;
+    public static int solution(int A, int B, int K) {
+//        int result = 0;
+//        for(int i = A;i<=B;i++){
+//            if ( (i % K) == 0){
+//                result++;
+//            }
+//        }
+//        return result;
+        return B / K - (A / K) + (A % K == 0 ? 1 : 0);
     }
 }
