@@ -169,8 +169,8 @@ public class WordifiedNumberImpl implements WordifiedNumber {
 
     /**
      * private method to return the formatted number.
-     * @param  i  the number to be calculated as a cardinal/ordinal
-     * @return    The String with the cardinal/ordinal
+     * @param  i  the number to be formatted
+     * @return    The String with the formatted number
      */
     private String customFormat(double value) {
         DecimalFormat myFormatter = new DecimalFormat(decimalFormat);
