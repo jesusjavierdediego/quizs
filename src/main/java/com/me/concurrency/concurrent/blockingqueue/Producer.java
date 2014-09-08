@@ -3,7 +3,7 @@ The Producer adds random integers (between 0 and 100) and
 puts the result of the addition to a shared BlockingQueue.
  */
 
-package com.me.concurrency;
+package com.me.concurrency.concurrent.blockingqueue;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;

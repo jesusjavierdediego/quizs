@@ -5,7 +5,7 @@ the queue and in case an element is not available, it blocks until this element
 becomes available.
  */
 
-package com.me.concurrency;
+package com.me.concurrency.concurrent.blockingqueue;
 
 import java.util.concurrent.BlockingQueue;
 

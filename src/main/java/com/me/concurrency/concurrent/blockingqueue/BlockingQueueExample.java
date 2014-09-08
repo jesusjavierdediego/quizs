@@ -3,7 +3,7 @@ First, in the BlockingQueueExample class, we start a Producer and a Consumer in 
  
  */
 
-package com.me.concurrency;
+package com.me.concurrency.concurrent.blockingqueue;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
